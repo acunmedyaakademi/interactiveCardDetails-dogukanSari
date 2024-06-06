@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İnteraktif Kard Detay Formu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/interactive-card-details-form.css">
+  <script src="/assets/js/interactive-card-details-form.js" defer></script>
+</head>
+<body>
+  <div class="background">
+    <img src="/assets/img/cards.png" alt="Cards">
+  </div>
+  <!-- container START -->
+  <form class="container">
+      <label for="cardholderName">Kartın Üzerindeki İsim Soyisim</label><br>
+      <input required type="text" name="cardholderName" id="cardholderName" placeholder="örneğin: Doğukan Sarı">
+
+      <label for="cardNumber">Kart Numarası</label><br>
+      <input required type="number" name="cardNumber" id="cardNumber" placeholder="örneğin: 1234567891230000">
+
+      <div class="expirationDateMain">
+        <div class="expirationDate">  
+          <label for="expDate">S.K.T. (Ay / Yıl)</label>
+          <div class="expirationDateInputs">
+            <input required type="number" name="expDate" id="expDateMonth" placeholder="AY">
+            <input required type="number" name="expDate" id="expDateYear" placeholder="YIL">
+          </div>
+        </div>
+
+        <div class="cvc">
+          <label for="cvc">CVC</label><br>
+          <input required type="number" name="cvc" id="cvc" placeholder="örnek: 123">
+        </div>
+
+      </div>
+        
+      <button id="btn">Onayla</button>
+
+  </form>
+  <!-- container END -->
+  
+</body>
+</html>

@@ -1,0 +1,156 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+label, input {
+  font-family: 'Space Grotesk',sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+body {
+  width: 375px;
+}
+
+.background {
+  width: 375px;
+  height: 240px;
+  background-color: #21092F;
+  margin-bottom: 91px;
+}
+
+.container {
+  width: 327px;
+  margin: 0 auto;
+}
+
+.container input {
+  width: 327px;
+  height: 45px;
+}
+
+#cardholderName {
+  margin-bottom: 20px;
+}
+
+#cardNumber {
+  margin-bottom: 20px;
+}
+
+.expirationDateMain {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.expirationDateMain input {
+  width: 164px;
+  height: 45px;
+}
+
+.expirationDate {
+  width: 152px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expirationDate label {
+  text-align: left;
+}
+
+
+.expirationDate input {
+  width: 72px;
+  height: 45px;
+}
+
+#btn {
+  width: 327px;
+  padding: 15px 130px;
+  background-color: #21092F;
+  border: 1px solid #21092F;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: 'Space Grotesk',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: center;
+}
+
+@media (width >= 1440px) {
+  body {
+    width: 1440px;
+    height: 900px;
+    display: flex;
+    gap: 120px;
+  }
+
+  .background {
+    width: 483px;
+    height: 900px;
+  }
+
+  .background img {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+  }
+
+  .container {
+    margin-top: 243px;
+    width: 381px;
+  }
+
+  .container input {
+    width: 381px;
+    height: 45px;
+  }
+  
+  .expirationDateMain {
+    display: flex;
+    gap: 20px;
+  }
+
+  .expirationDateMain input {
+    width: 191px;
+    height: 45px;
+  }
+
+  .expirationDate input {
+    width: 80px;
+    height: 45px;
+  }
+
+  .expirationDateInputs {
+    display: flex;
+    gap: 10px;
+  }
+}
